@@ -1,0 +1,17 @@
+.venv/
+venv/
+data/
+*.log
+*.tmp
+*.bak
+*.swp
+.DS_Store
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+*.egg
+runs/

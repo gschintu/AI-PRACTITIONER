@@ -20,6 +20,11 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
+**Note:** If you encounter NumPy compatibility issues, ensure NumPy < 2.0 is installed:
+```bash
+pip install --upgrade "numpy<2.0.0"
+```
+
 ### Run the MNIST training sample
 
 ```bash

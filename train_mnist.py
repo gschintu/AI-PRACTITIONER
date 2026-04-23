@@ -81,7 +81,7 @@ def train(model, loader, optimizer, criterion, device, epoch, scheduler=None):
 
         if batch_idx == 1:
             grad_norm = torch.sqrt(
-                sum(param.grad.data.norm(2).item() ** 2 for param in model.parameters() if param.grad is not None)
+                torch.tensor(sum(param.grad.data.norm(2).item() ** 2 for param in model.parameters() if param.grad is not None))
             )
             print(f"First batch gradient norm: {grad_norm:.4f}")
 
