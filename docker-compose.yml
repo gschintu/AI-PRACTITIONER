@@ -1,0 +1,8 @@
+version: '3.9'
+services:
+  ai-practitioner:
+    build: .
+    container_name: ai_practitioner_sample
+    volumes:
+      - .:/app
+    command: ["python", "train_mnist.py", "--epochs", "1", "--batch-size", "128", "--lr", "0.02"]
